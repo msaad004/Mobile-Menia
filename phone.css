@@ -1,0 +1,97 @@
+/* Navigation */
+#navbar::before{
+height: 150%;
+padding-bottom: 2rem;
+}
+
+#navbar{
+    flex-direction: column;
+}
+
+/* Home Section */
+
+#home{
+    height: 15rem;
+    padding-top: 5rem;
+}
+
+#home::before{
+    height: 116%;
+}
+/* Brand Buttons */
+#brands::before{
+    height: 181%;
+}
+
+#brands{
+    flex-direction: column;
+    height: 55rem;
+}
+
+#brands h1 {
+    margin-top: -2rem;
+}
+
+#boxes{
+    flex-direction: column;
+    margin-top: -5rem;
+}
+
+.box{
+    font-size: 0.9rem;
+}
+#box1{
+    height: 10rem;
+    width: 50rem;
+    margin: 2rem;
+    display: flex;
+}
+#box1 div{
+    padding: 2rem 1rem;
+}
+
+#box1 h3{
+    text-align: center;
+}
+
+#box1 img{
+    height: 8rem;
+    width: 11rem;
+    padding-left: 1rem;
+}
+
+#box3{
+    height: 10rem;
+    width: 50rem;
+    margin: 2rem;
+    display: flex;
+}
+
+#box3 div{
+    padding: 2rem 1rem;
+}
+#box3 img{
+    height: 8rem;
+    width: 33rem;
+    padding-left: 1rem;
+}
+#box4{
+    height: 10rem;
+    width: 50rem;
+    margin: 2rem;
+    display: flex;
+}
+
+#box4 div{
+    padding: 2rem 1rem;
+}
+#box4 img{
+    height: 8rem;
+    width: 17rem;
+    padding-left: 1rem;
+}
+/* Contact us */
+#footer::before{
+    height: 10rem;
+    margin-top: -2.7rem;
+}

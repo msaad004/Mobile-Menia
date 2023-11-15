@@ -1,0 +1,353 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*CSS Variables*/
+:root {
+    --navbar-height: 2rem;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: 'Baloo Bhai';
+    /* position: sticky; */
+    top: 0rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Navigation Bar: Logo*/
+#logo {
+    margin: 2rem;
+    margin-top: 1.3rem;
+}
+
+#logo img {
+    height: 3rem;
+    width: 3rem;
+}
+
+/*Navigation Bar: List*/
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: #edd6b1;
+    width: 100%;
+    height: 75%;
+    z-index: -3;
+    opacity: 0.8;
+    margin-top: -1.7rem;
+    /* border-radius: 3rem; */
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 0rem 2rem;
+    display: block;
+    border-radius: 20px;
+    color: #000000;
+    height: 1.11rem;
+    margin-top: -1.9rem;
+    padding-top: 0.3rem;
+    /* border: 2px solid red; */
+}
+
+#navbar ul li a:hover {
+    transition-duration: 0.2s;
+    color: #8a5603;
+}
+
+/*Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 15rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 200%;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+/*Utility Classes*/
+#headingprimary {
+    font-size: 2.4rem;
+    padding: 12px;
+    color: #000000;
+    text-align: center;
+    font-family: "Baloo Bhai";
+    font-weight: lighter;
+    text-shadow: 0rem 0rem 2rem;
+}
+
+#secp1 {
+    color: #000000;
+    text-align: center;
+    font-size: 1.2rem;
+    text-shadow: 0rem 0rem 2rem;
+}
+
+#secp2 {
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    text-shadow: 0rem 0rem 2rem;
+}
+
+/* Search Bar */
+
+#searchbox {
+    width: 17rem;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 0rem 0.5rem;
+    box-shadow: 0rem 0rem 2rem;
+}
+
+#btn {
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    background-color: #ffffff;
+    width: 5rem;
+    box-shadow: 0rem 0rem 2rem;
+}
+
+#btn:hover {
+    transition-duration: 0.2s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#btn:active {
+    transition-duration: 0.1s;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Brand Buttons */
+
+#brands::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg1.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 115%;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+#brands {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15rem;
+    height: 90vh;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+}
+
+#brands h1 {
+    margin-top: -6rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Baloo Bhai";
+}
+
+#boxes {
+    display: flex;
+    margin-top: -1rem;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+#box1 {
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 20rem;
+    margin: 0rem 0.5rem;
+}
+
+#oppolink {
+    text-decoration: none;
+    color: black;
+}
+
+#box1:hover {
+    box-shadow: 0rem 0rem 5rem black;
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#box1 img {
+    width: 19rem;
+    height: 9rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+#oppotext {
+    padding: 0.6rem;
+    text-align: justify;
+    padding-top: 0.3rem;
+}
+
+#box3 {
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 0rem 0.5rem;
+    height: 20rem;
+    width: 25rem;
+}
+
+#vivolink {
+    text-decoration: none;
+    color: black;
+}
+
+#box3:hover {
+    box-shadow: 0rem 0rem 5rem black;
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#box3 img {
+    width: 18rem;
+    height: 9rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+#vivotext {
+    padding: 0.6rem;
+    text-align: justify;
+    padding-top: 0.3rem;
+}
+
+#box4 {
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 0rem 0.5rem;
+    height: 20rem;
+    width: 25rem;
+}
+
+#xiaomilink {
+    text-decoration: none;
+    color: black;
+}
+
+#box4:hover {
+    box-shadow: 0rem 0rem 5rem black;
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#box4 img {
+    width: 18rem;
+    height: 9rem;
+    display: block;
+    margin: 1rem auto;
+}
+
+#xiaomitext {
+    padding: 0.6rem;
+    text-align: justify;
+    padding-top: 0.6rem;
+}
+
+/*Footer*/
+
+#footer::before {
+    content: "";
+    position: absolute;
+    background: url("../img/meeraki-contact-us resized2.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 25%;
+    z-index: -2;
+    opacity: 0.4;
+    margin-top: -2rem;
+}
+
+
+#footer1 {
+    display: flex;
+    /* flex-direction: column; */
+    padding-top: 1rem;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    align-content: center;
+    height: 5rem;
+    /* margin-top: 7rem; */
+    padding-bottom: 0rem;
+}
+
+#nameandaddress {
+    margin: 0rem 3rem;
+    line-height: 1.3rem;
+
+}
+
+#emailandphone {
+    margin: 0rem 3rem;
+    line-height: 1.3rem;
+}
+
+#emailandphone a {
+    text-decoration: none;
+    color: black;
+}
+
+#emailandphone a:hover {
+    text-decoration: none;
+    color: blue;
+    transition: 0.2s;
+}
+
+/* Contact us */
+#contactus {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
