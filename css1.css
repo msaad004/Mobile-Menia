@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -24,7 +25,6 @@ html{
     overflow: hidden;
 }
 
-/*Navigation Bar: Logo*/
 #logo {
     margin: 2rem;
     margin-top: 1.3rem;
@@ -98,7 +98,7 @@ html{
     opacity: 0.4;
 }
 
-/*Utility Classes*/
+/*Welcome Note*/
 #headingprimary {
     font-size: 2.4rem;
     padding: 12px;
@@ -297,7 +297,7 @@ html{
     padding-top: 0.6rem;
 }
 
-/*Footer*/
+/*Contact Us*/
 
 #footer::before {
     content: "";
@@ -345,7 +345,6 @@ html{
     transition: 0.2s;
 }
 
-/* Contact us */
 #contactus {
     display: flex;
     justify-content: center;
